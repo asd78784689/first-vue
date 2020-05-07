@@ -1,0 +1,34 @@
+@import "variables";
+
+//ellipsis
+@mixin ellipsis(){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+//multi line ellipsis
+@mixin multiline-ellipsis($num:2){
+    // 多行省略号 默认两行
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp:$num;
+    -webkit-box-orient:vertical;
+    white-space: normal !important;
+    word-wrap: break-word;
+}
+
+//flex-center
+@mixin flex-center($direction:row){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: $direction;
+}
+
+@mixin flex-between(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

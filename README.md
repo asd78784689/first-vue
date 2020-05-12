@@ -1,6 +1,6 @@
 # vue04
 
-> A Vue.js project
+> A Vue.js project 移动电商平台的项目演示
 
 ## Build Setup
 
